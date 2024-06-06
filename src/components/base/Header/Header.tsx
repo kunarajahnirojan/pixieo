@@ -1,5 +1,5 @@
 import React from 'react';
-import '@/styles/header.css';
+import '@/styles/components.css';
 import Image from 'next/image';
 import Logo from '@/assets/images/logo.svg';
 import Button from '@/components/shared/Button';
