@@ -1,3 +1,4 @@
+import '@/styles/components.css';
 export interface IButtonProps {
   name: any;
   onClick?: (e: any) => void;

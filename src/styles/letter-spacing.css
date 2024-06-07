@@ -1,18 +1,18 @@
 .tracking-tighter {
-  letter-spacing: -0.05em;
+  letter-spacing: -0.5em;
 }
 .tracking-tight {
-  letter-spacing: -0.025em;
+  letter-spacing: -0.25em;
 }
 .tracking-normal {
-  letter-spacing: 0em;
+  letter-spacing: 0.25em;
 }
 .tracking-wide {
-  letter-spacing: 0.025em;
+  letter-spacing: 0.5em;
 }
 .tracking-wider {
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
 }
 .tracking-widest {
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
 }

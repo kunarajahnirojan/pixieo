@@ -30,7 +30,7 @@ export const LinkedinIcon = () => {
           r='25'
           cx='50'
           cy='50'
-          stroke-width='4'
+          strokeWidth='4'
           fill='none'
           stroke='url(#linear-1)'
         ></circle>
@@ -65,7 +65,7 @@ export const FacebookIcon = () => {
           r='25'
           cx='50'
           cy='50'
-          stroke-width='4'
+          strokeWidth='4'
           fill='none'
           stroke='url(#linear-2)'
         ></circle>
@@ -101,7 +101,7 @@ export const InstagramIcon = () => {
           r='25'
           cx='50'
           cy='50'
-          stroke-width='4'
+          strokeWidth='4'
           fill='none'
           stroke='url(#linear-3)'
         ></circle>
