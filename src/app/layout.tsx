@@ -8,6 +8,8 @@ import '@/styles/line-height.css';
 import '@/styles/text-align.css';
 import '@/styles/text-transform.css';
 import '@/styles/typography.css';
+import '@/styles/flex.css';
+import '@/styles/padding.css';
 
 import { Footer, Header } from '@/components/base';
 

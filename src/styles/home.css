@@ -14,12 +14,8 @@
 .home-bottom-background {
   background: linear-gradient(180deg, #040718 0%, #02030d 100%);
   box-shadow: 100px 100px 100px;
-  filter: blur(80px);
   width: 100%;
   height: 300vh;
-  top: -20vh;
-  position: relative;
-  z-index: 2;
 }
 
 .parallax-container {
