@@ -4,53 +4,54 @@
   font-size: 1.3em;
 }
 
-.orbit-wrap > li {
-  transform: translate(-50%, -50%);
+.card {
+  background: rgba(158, 0, 255, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid #9e00ff;
+  border-radius: 5px;
+  width: 12vw;
 }
 
-.ring {
-  width: 25em;
-  height: 25em;
+.orbit-wrap li:nth-child(2) .card {
+  background: rgba(0, 255, 10, 0.2);
+  border: 1px solid #00ff0a;
 }
 
-.ring > *:nth-of-type(2) {
-  transform: rotate(95deg) translate(7.5em) rotate(-95deg);
+.orbit-wrap li:nth-child(3) .card {
+  background: rgba(255, 97, 0, 0.2);
+  border: 1px solid #ff6100;
 }
 
-.ring > *:nth-of-type(3) {
-  transform: rotate(142.5deg) translate(7.5em) rotate(-142.5deg);
+.orbit-wrap li:nth-child(4) .card {
+  background: rgba(255, 153, 0, 0.2);
+  border: 1px solid #ff9900;
 }
 
-.ring > *:nth-of-type(4) {
-  transform: rotate(190deg) translate(7.5em) rotate(-190deg);
+.orbit-wrap li:nth-child(5) .card {
+  background: rgba(0, 87, 255, 0.2);
+  border: 1px solid #0057ff;
 }
 
-.ring > *:nth-of-type(5) {
-  transform: rotate(237.5deg) translate(7.5em) rotate(-237.5deg);
+.orbit-wrap li:nth-child(6) .card {
+  background: rgba(0, 255, 178, 0.2);
+  border: 1px solid #00ffb2;
+}
+.orbit-wrap li:nth-child(7) .card {
+  background: rgba(0, 240, 255, 0.2);
+  border: 1px solid #00f0ff;
 }
 
-.ring > *:nth-of-type(6) {
-  transform: rotate(285deg) translate(7.5em) rotate(-285deg);
+.orbit-wrap li:nth-child(8) .card {
+  background: rgba(250, 255, 0, 0.2);
+  border: 1px solid #faff00;
 }
 
-.ring > *:nth-of-type(7) {
-  transform: rotate(332.5deg) translate(7.5em) rotate(-332.5deg);
-}
-
-.ring > *:nth-of-type(8) {
-  transform: rotate(340deg) translate(7.5em) rotate(-340deg);
-}
-
-.ring > *:nth-of-type(8) {
-  transform: rotate(380deg) translate(7.5em) rotate(-380deg);
-}
-
-ul[class^='ring'] li {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 4.6em;
-  height: 4.6em;
-  margin: -0.8em;
+.industries-card {
+  background: rgba(236, 32, 35, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid #ec2023;
+  border-radius: 5px;
+  height: 5vh;
 }

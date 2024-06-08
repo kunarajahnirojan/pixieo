@@ -64,7 +64,7 @@ const Footer = () => {
 
       <section className='flex flex-row justify-around items-center gap-10'>
         <div></div>
-        <div className='text-white poppins-semibold text-sm tracking'>
+        <div className='text-white poppins-semibold text-sm'>
           Copyright © 2024 Piratehub. All Rights Reserved
         </div>
         <div className='flex flex-row items-center gap-6'>

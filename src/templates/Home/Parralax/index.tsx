@@ -51,20 +51,17 @@ function Parallax() {
         <Image width={4000} src={Layer6} id='layer-6' alt={''} />
         <Image width={4000} src={Layer5} id='layer-5' alt={''} />
         <Image width={4000} src={Layer4} id='layer-4' alt={''} />
-        <div id='heading-1' className='tracking-widest uppercase poppins-bold'>
+        <div id='heading-1' className=' uppercase poppins-bold'>
           Shaping Tomorrow
         </div>
         <Image width={4000} src={Layer3} id='layer-3' alt={''} />
 
-        <div id='heading-2' className='uppercase poppins-bold tracking-widest'>
+        <div id='heading-2' className='uppercase poppins-bold'>
           Simple Software, Big Impact
         </div>
         <Image width={4000} src={Layer2} id='layer-2' alt={''} />
 
-        <div
-          id='heading-3'
-          className='uppercase poppins-bold text-center tracking-wide'
-        >
+        <div id='heading-3' className='uppercase poppins-bold text-center'>
           Join forces with our talented team, accelerating your <br /> amazing
           concept towards global success
         </div>
