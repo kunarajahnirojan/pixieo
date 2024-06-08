@@ -488,3 +488,23 @@
 .gap-96 {
   gap: 24rem; /* 384px */
 }
+
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+}

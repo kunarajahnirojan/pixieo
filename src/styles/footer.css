@@ -1,15 +1,8 @@
 .footer {
-  display: flex;
-  flex-direction: column;
   background: #030512;
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
   background: linear-gradient(
       0deg,
       rgba(27, 0, 62, 0) 0%,
@@ -27,49 +20,6 @@
     );
 }
 
-.footer-left-container {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-
-.footer-center-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2vw;
-}
-
-.footer-right-container {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.footer-contact-info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-}
-
-.footer-bottom-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  gap: 10px;
-}
-
-.footer-social-media-info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 3px;
-}
-
-.footer-top-container {
-  position: relative;
-}
 .wave {
   position: absolute;
   left: 0;

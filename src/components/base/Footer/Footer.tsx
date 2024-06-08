@@ -10,14 +10,14 @@ import { FacebookIcon, InstagramIcon, LinkedinIcon } from '@/constants/icons';
 
 const Footer = () => {
   return (
-    <div className='footer'>
-      <div className='footer-top-container'>
+    <div className='footer flex flex-col'>
+      <div className='relative'>
         <div className='wave'></div>
         <div className='wave2'></div>
       </div>
 
-      <div className='footer-container'>
-        <section className='footer-left-container'>
+      <div className='footer-container flex flex-row justify-around items-center'>
+        <section className='relative flex flex-row'>
           <Image src={BeachMan} alt='relaxation' priority={true} />
 
           <div
@@ -32,42 +32,42 @@ const Footer = () => {
             <Button color='#1E2F61' name='Schedule a meeting' />
           </div>
         </section>
-        <section className='footer-center-container'>
-          <div className='footer-contact-info'>
+        <section className='flex flex-col gap-10'>
+          <div className='flex flex-row items-center gap-2'>
             <Image src={PhoneIcon} alt='relaxation' priority={true} />
 
-            <text className='text-purple-300 poppins-semibold text-sm tracking-wide'>
+            <text className='text-purple-300 poppins-semibold text-sm'>
               +94 21 2324323121313
             </text>
           </div>
 
-          <div className='footer-contact-info'>
+          <div className='flex flex-row items-center gap-2'>
             <Image src={MailIcon} alt='relaxation' priority={true} />
 
-            <text className='text-purple-300 poppins-semibold text-sm tracking-wide'>
+            <text className='text-purple-300 poppins-semibold text-sm'>
               info@piratehub.io
             </text>
           </div>
 
-          <div className='footer-contact-info'>
+          <div className='flex flex-row items-center gap-2'>
             <Image src={LocationIcon} alt='relaxation' priority={true} />
 
-            <text className='text-purple-300 poppins-semibold text-sm tracking-wide'>
+            <text className='text-purple-300 poppins-semibold text-sm'>
               Jaffna, Sri Lanka{' '}
             </text>
           </div>
         </section>
-        <section className='footer-right-container'>
+        <section className='flex flex-col gap-10'>
           <Image src={LocationMap} alt='relaxation' priority={true} />
         </section>
       </div>
 
-      <section className='footer-bottom-container'>
+      <section className='flex flex-row justify-around items-center gap-10'>
         <div></div>
-        <div className='text-white poppins-semibold text-sm tracking-wide'>
+        <div className='text-white poppins-semibold text-sm tracking'>
           Copyright © 2024 Piratehub. All Rights Reserved
         </div>
-        <div className='footer-social-media-info'>
+        <div className='flex flex-row items-center gap-6'>
           <LinkedinIcon />
 
           <FacebookIcon />

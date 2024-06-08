@@ -15,7 +15,7 @@ function Button(props: IButtonProps) {
       className={
         props.className
           ? props.className
-          : 'button text-white text-sm tracking-widest font-bold uppercase'
+          : 'button text-white text-sm font-bold uppercase'
       }
       style={{ background: props.color }}
     >
