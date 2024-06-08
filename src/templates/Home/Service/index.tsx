@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import '@/styles/home-services.css';
 import Icon1 from '@/assets/images/home-services/icon-5.svg';
@@ -14,7 +14,7 @@ function Services() {
     <main className='flex flex-col gap-10'>
       <div className='grid grid-cols-3 gap-16 px-80'>
         <div className='service-card text-white flex justify-center flex-col items-center px-4 gap-4'>
-          <Image src={Icon1} />
+          <Image alt='web' src={Icon1} />
           <div className='uppercase text-white poppins-semibold text-lg text-center'>
             Web application <br />
             development
@@ -28,7 +28,7 @@ function Services() {
           <div className='text-white poppins text-md py-10'>Explore</div>
         </div>
         <div className='service-card text-white flex justify-center flex-col items-center px-4 gap-4'>
-          <Image src={Icon2} />
+          <Image alt='mobile' src={Icon2} />
           <div className='uppercase text-white poppins-semibold text-lg text-center'>
             mobile application <br />
             development
@@ -42,7 +42,7 @@ function Services() {
           <div className='text-white poppins text-md py-10'>Explore</div>
         </div>
         <div className='service-card text-white flex justify-center flex-col items-center px-4 gap-4'>
-          <Image src={Icon3} />
+          <Image alt='digital' src={Icon3} />
           <div className='uppercase text-white poppins-semibold text-lg text-center'>
             digital marketing <br />& seo
           </div>
@@ -57,7 +57,7 @@ function Services() {
       </div>
       <div className='grid grid-cols-4 gap-16 px-40'>
         <div className='service-card text-white flex justify-center flex-col items-center px-4 gap-4'>
-          <Image src={Icon4} />
+          <Image alt='it' src={Icon4} />
           <div className='uppercase text-white poppins-semibold text-lg text-center'>
             it <br />
             consultancy
@@ -71,7 +71,7 @@ function Services() {
           <div className='text-white poppins text-md py-10'>Explore</div>
         </div>
         <div className='service-card text-white flex justify-center flex-col items-center px-4 gap-4'>
-          <Image src={Icon5} />
+          <Image alt='iot' src={Icon5} />
           <div className='uppercase text-white poppins-semibold text-lg text-center'>
             iot <br />
             services
@@ -85,7 +85,7 @@ function Services() {
           <div className='text-white poppins text-md py-10'>Explore</div>
         </div>
         <div className='service-card text-white flex justify-center flex-col items-center px-4 gap-4'>
-          <Image src={Icon6} />
+          <Image alt='outsourcing' src={Icon6} />
           <div className='uppercase text-white poppins-semibold text-lg text-center'>
             out sourcing <br />
             services
@@ -99,7 +99,7 @@ function Services() {
           <div className='text-white poppins text-md py-10'>Explore</div>
         </div>
         <div className='service-card text-white flex justify-center flex-col items-center px-4 gap-4'>
-          <Image src={Icon7} />
+          <Image alt='iot' src={Icon7} />
           <div className='uppercase text-white poppins-semibold text-lg text-center'>
             iot <br />
             services
@@ -115,7 +115,7 @@ function Services() {
       </div>
       <div className='grid grid-cols-2 gap-16 px-100'>
         <div className='service-card text-white flex justify-center flex-col items-center px-4 gap-4'>
-          <Image src={Icon8} />
+          <Image alt='ui/ux' src={Icon8} />
           <div className='uppercase text-white poppins-semibold text-lg text-center'>
             ui/ux <br />
             design
@@ -129,7 +129,7 @@ function Services() {
           <div className='text-white poppins text-md py-10'>Explore</div>
         </div>
         <div className='service-card text-white flex justify-center flex-col items-center px-4 gap-4'>
-          <Image src={Icon8} />
+          <Image alt='uiux' src={Icon8} />
           <div className='uppercase text-white poppins-semibold text-lg text-center'>
             ui/ux <br />
             design
