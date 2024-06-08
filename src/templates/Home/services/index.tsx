@@ -1,101 +1,147 @@
 import React, { useEffect, useRef } from 'react';
+import Image from 'next/image';
 import '@/styles/home-services.css';
-
+import Icon1 from '@/assets/images/home-services/icon-5.svg';
+import Icon2 from '@/assets/images/home-services/icon-9.svg';
+import Icon3 from '@/assets/images/home-services/icon-3.svg';
+import Icon4 from '@/assets/images/home-services/icon-4.svg';
+import Icon5 from '@/assets/images/home-services/icon-1.svg';
+import Icon6 from '@/assets/images/home-services/icon-7.svg';
+import Icon7 from '@/assets/images/home-services/icon-1.svg';
+import Icon8 from '@/assets/images/home-services/icon-6.svg';
 function Services() {
-  useEffect(() => {
-    console.clear();
-
-    const cardsContainer: any = document.querySelector('.cards');
-    const cards = Array.from(document.querySelectorAll('.card'));
-    const overlay: any = document.querySelector('.overlay');
-
-    const applyOverlayMask = (e: any) => {
-      const overlayEl = e.currentTarget;
-      const x = e.pageX - cardsContainer.offsetLeft;
-      const y = e.pageY - cardsContainer.offsetTop;
-
-      overlayEl.style = `--opacity: 1; --x: ${x}px; --y:${y}px;`;
-    };
-
-    const createOverlayCta = (overlayCard: any, ctaEl: any) => {
-      const overlayCta: any = document.createElement('div');
-      overlayCta.classList.add('cta');
-      overlayCta.textContent = ctaEl.textContent;
-      overlayCta.setAttribute('aria-hidden', true);
-      overlayCard.append(overlayCta);
-    };
-
-    const observer = new ResizeObserver((entries) => {
-      entries.forEach((entry) => {
-        const cardIndex = cards.indexOf(entry.target);
-        let width = entry.borderBoxSize[0].inlineSize;
-        let height = entry.borderBoxSize[0].blockSize;
-
-        if (cardIndex >= 0) {
-          overlay.children[cardIndex].style.width = `${width}px`;
-          overlay.children[cardIndex].style.height = `${height}px`;
-        }
-      });
-    });
-
-    const initOverlayCard = (cardEl: any) => {
-      const overlayCard = document.createElement('div');
-      overlayCard.classList.add('card');
-      createOverlayCta(overlayCard, cardEl.lastElementChild);
-      overlay.append(overlayCard);
-      observer.observe(cardEl);
-    };
-
-    cards.forEach(initOverlayCard);
-    document.body.addEventListener('pointermove', applyOverlayMask);
-  }, []);
-
   return (
-    <main className='main flow'>
-      <h1 className='main-heading'>Pricing</h1>
-      <div className='main-cards cards'>
-        <div className='cards-inner'>
-          <div className='cards-card card'>
-            <h2 className='card-heading'>Basic</h2>
-            <p className='card-price'>$9.99</p>
-            <ul role='list' className='card-bullets flow'>
-              <li>Access to standard workouts and nutrition plans</li>
-              <li>Email support</li>
-            </ul>
-            <a href='#basic' className='card-cta cta'>
-              Get Started
-            </a>
+    <main className='flex flex-col gap-10'>
+      <div className='grid grid-cols-3 gap-16 px-80'>
+        <div className='service-card text-white flex justify-center flex-col items-center px-4 gap-4'>
+          <Image src={Icon1} />
+          <div className='uppercase text-white poppins-semibold text-lg text-center'>
+            Web application <br />
+            development
           </div>
 
-          <div className='cards-card card'>
-            <h2 className='card-heading'>Pro</h2>
-            <p className='card-price'>$19.99</p>
-            <ul role='list' className='card-bullets flow'>
-              <li>Access to advanced workouts and nutrition plans</li>
-              <li>Priority Email support</li>
-              <li>Exclusive access to live Q&A sessions</li>
-            </ul>
-            <a href='#pro' className='card-cta cta'>
-              Upgrade to Pro
-            </a>
+          <div className='text-white poppins text-xs text-center'>
+            Crafting seamless, scalable web applications tailored to meet modern{' '}
+            business challenges
           </div>
 
-          <div className='cards-card card'>
-            <h2 className='card-heading'>Ultimate</h2>
-            <p className='card-price'>$29.99</p>
-            <ul role='list' className='card-bullets flow'>
-              <li>Access to all premium workouts and nutrition plans</li>
-              <li>24/7 Priority support</li>
-              <li>1-on-1 virtual coaching session every month</li>
-              <li>Exclusive content and early access to new features</li>
-            </ul>
-            <a href='#ultimate' className='card-cta cta'>
-              Go Ultimate
-            </a>
-          </div>
+          <div className='text-white poppins text-md py-10'>Explore</div>
         </div>
+        <div className='service-card text-white flex justify-center flex-col items-center px-4 gap-4'>
+          <Image src={Icon2} />
+          <div className='uppercase text-white poppins-semibold text-lg text-center'>
+            mobile application <br />
+            development
+          </div>
 
-        <div className='overlay cards-inner'></div>
+          <div className='text-white poppins text-xs text-center'>
+            Developing intuitive, cross-platform mobile apps designed for
+            maximum user engagement
+          </div>
+
+          <div className='text-white poppins text-md py-10'>Explore</div>
+        </div>
+        <div className='service-card text-white flex justify-center flex-col items-center px-4 gap-4'>
+          <Image src={Icon3} />
+          <div className='uppercase text-white poppins-semibold text-lg text-center'>
+            digital marketing <br />& seo
+          </div>
+
+          <div className='text-white poppins text-xs text-center'>
+            Boosting online presence and engagement through strategic digital
+            marketing and SEO
+          </div>
+
+          <div className='text-white poppins text-md py-10'>Explore</div>
+        </div>
+      </div>
+      <div className='grid grid-cols-4 gap-16 px-40'>
+        <div className='service-card text-white flex justify-center flex-col items-center px-4 gap-4'>
+          <Image src={Icon4} />
+          <div className='uppercase text-white poppins-semibold text-lg text-center'>
+            it <br />
+            consultancy
+          </div>
+
+          <div className='text-white poppins text-xs text-center'>
+            Driving digital transformations with cutting-edge tech for
+            competitive business advantages.
+          </div>
+
+          <div className='text-white poppins text-md py-10'>Explore</div>
+        </div>
+        <div className='service-card text-white flex justify-center flex-col items-center px-4 gap-4'>
+          <Image src={Icon5} />
+          <div className='uppercase text-white poppins-semibold text-lg text-center'>
+            iot <br />
+            services
+          </div>
+
+          <div className='text-white poppins text-xs text-center'>
+            Transforming objects into smart devices for increased efficiency and
+            innovative solutions
+          </div>
+
+          <div className='text-white poppins text-md py-10'>Explore</div>
+        </div>
+        <div className='service-card text-white flex justify-center flex-col items-center px-4 gap-4'>
+          <Image src={Icon6} />
+          <div className='uppercase text-white poppins-semibold text-lg text-center'>
+            out sourcing <br />
+            services
+          </div>
+
+          <div className='text-white poppins text-xs text-center'>
+            Delivering project excellence and innovation through top-tier talent
+            and technology outsourcing
+          </div>
+
+          <div className='text-white poppins text-md py-10'>Explore</div>
+        </div>
+        <div className='service-card text-white flex justify-center flex-col items-center px-4 gap-4'>
+          <Image src={Icon7} />
+          <div className='uppercase text-white poppins-semibold text-lg text-center'>
+            iot <br />
+            services
+          </div>
+
+          <div className='text-white poppins text-xs text-center'>
+            Transforming objects into smart devices for increased efficiency and
+            innovative solutions
+          </div>
+
+          <div className='text-white poppins text-md py-10'>Explore</div>
+        </div>
+      </div>
+      <div className='grid grid-cols-2 gap-16 px-100'>
+        <div className='service-card text-white flex justify-center flex-col items-center px-4 gap-4'>
+          <Image src={Icon8} />
+          <div className='uppercase text-white poppins-semibold text-lg text-center'>
+            ui/ux <br />
+            design
+          </div>
+
+          <div className='text-white poppins text-xs text-center'>
+            Designing visually stunning, user-friendly interfaces for optimal
+            digital interaction and satisfaction
+          </div>
+
+          <div className='text-white poppins text-md py-10'>Explore</div>
+        </div>
+        <div className='service-card text-white flex justify-center flex-col items-center px-4 gap-4'>
+          <Image src={Icon8} />
+          <div className='uppercase text-white poppins-semibold text-lg text-center'>
+            ui/ux <br />
+            design
+          </div>
+
+          <div className='text-white poppins text-xs text-center'>
+            Designing visually stunning, user-friendly interfaces for optimal
+            digital interaction and satisfaction
+          </div>
+
+          <div className='text-white poppins text-md py-10'>Explore</div>
+        </div>
       </div>
     </main>
   );
