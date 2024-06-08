@@ -1,51 +1,67 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '@/styles/home-industries.css';
+import CenterImage from '@/assets/images/home-industries/industries-man.svg';
+import I1 from '@/assets/images/home-industries/ind1.svg';
+import I2 from '@/assets/images/home-industries/ind2.svg';
+import I3 from '@/assets/images/home-industries/ind3.svg';
+import I4 from '@/assets/images/home-industries/ind4.svg';
+import I5 from '@/assets/images/home-industries/ind5.svg';
+import I6 from '@/assets/images/home-industries/ind6.svg';
+import I7 from '@/assets/images/home-industries/ind7.svg';
+import I8 from '@/assets/images/home-industries/ind8.svg';
+import Image from 'next/image';
 
-const categories = [
-  { id: 'fitness', name: 'Fitness', color: '#8A2BE2' },
-  { id: 'hospitality', name: 'Hospitality', color: '#32CD32' },
-  { id: 'manufacturing', name: 'Manufacturing', color: '#FFA500' },
-  { id: 'entertainment', name: 'Entertainment', color: '#FF4500' },
-  { id: 'retail', name: 'Retail', color: '#1E90FF' },
-  { id: 'banking-finance', name: 'Banking & Finance', color: '#228B22' },
-  { id: 'education', name: 'Education', color: '#20B2AA' },
-  { id: 'restaurants', name: 'Restaurants', color: '#FFD700' },
-];
-
-const Industries: React.FC = () => {
-  const [activeCategory, setActiveCategory] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveCategory(
-        (prevCategory) => (prevCategory + 1) % categories.length
-      );
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, []);
+function Industries() {
+  const centerImage = {
+    url: CenterImage,
+    title: 'Center Image',
+  };
 
   return (
-    <div className='container'>
-      <div
-        className='central-image'
-        style={{ backgroundColor: categories[activeCategory].color }}
-      >
-        <img src='path_to_image' alt='Central Character' />
+    <div className='text-white px-20 py-96 flex flex-row items-center justify-center'>
+      <div>
+        <div>
+          <ul className='orbit-wrap'>
+            <li>
+              <ul className='ring'>
+                <li>
+                  <Image
+                    width={50}
+                    src={centerImage.url}
+                    alt={centerImage.title}
+                  />
+                </li>
+
+                <li>
+                  <Image width={50} src={I1} alt={centerImage.title} />
+                </li>
+                <li>
+                  <Image width={50} src={I2} alt={centerImage.title} />
+                </li>
+                <li>
+                  <Image width={50} src={I3} alt={centerImage.title} />
+                </li>
+                <li>
+                  <Image width={50} src={I4} alt={centerImage.title} />
+                </li>
+                <li>
+                  <Image width={50} src={I5} alt={centerImage.title} />
+                </li>
+                <li>
+                  <Image width={50} src={I6} alt={centerImage.title} />
+                </li>
+                <li>
+                  <Image width={50} src={I7} alt={centerImage.title} />
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div className='categories'>
-        {categories.map((category, index) => (
-          <div
-            key={category.id}
-            className={`category ${index === activeCategory ? 'active' : ''}`}
-            id={category.id}
-          >
-            {category.name}
-          </div>
-        ))}
-      </div>
+
+      <div>Hello Man</div>
     </div>
   );
-};
+}
 
 export default Industries;

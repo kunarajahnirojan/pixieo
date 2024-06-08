@@ -1,0 +1,56 @@
+.orbit-wrap {
+  height: 50em;
+  list-style: none;
+  font-size: 1.3em;
+}
+
+.orbit-wrap > li {
+  transform: translate(-50%, -50%);
+}
+
+.ring {
+  width: 25em;
+  height: 25em;
+}
+
+.ring > *:nth-of-type(2) {
+  transform: rotate(95deg) translate(7.5em) rotate(-95deg);
+}
+
+.ring > *:nth-of-type(3) {
+  transform: rotate(142.5deg) translate(7.5em) rotate(-142.5deg);
+}
+
+.ring > *:nth-of-type(4) {
+  transform: rotate(190deg) translate(7.5em) rotate(-190deg);
+}
+
+.ring > *:nth-of-type(5) {
+  transform: rotate(237.5deg) translate(7.5em) rotate(-237.5deg);
+}
+
+.ring > *:nth-of-type(6) {
+  transform: rotate(285deg) translate(7.5em) rotate(-285deg);
+}
+
+.ring > *:nth-of-type(7) {
+  transform: rotate(332.5deg) translate(7.5em) rotate(-332.5deg);
+}
+
+.ring > *:nth-of-type(8) {
+  transform: rotate(340deg) translate(7.5em) rotate(-340deg);
+}
+
+.ring > *:nth-of-type(8) {
+  transform: rotate(380deg) translate(7.5em) rotate(-380deg);
+}
+
+ul[class^='ring'] li {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4.6em;
+  height: 4.6em;
+  margin: -0.8em;
+}
