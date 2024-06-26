@@ -2,19 +2,25 @@
   background: #613e5e;
   background: linear-gradient(90deg, #613e5e 20%, #c65060 100%);
   width: 100%;
-  height: 100vh;
-  padding-top: 5%;
+  height: 200vh;
+  padding-top: 1%;
+  overflow: hidden;
 }
 
 #parallax-container {
-  position: absolute;
   display: flex;
+  position: fixed;
   height: 100vh;
   justify-content: center;
   align-items: center;
   width: 100%;
   z-index: 100;
-  overflow: hidden;
+}
+
+#parallax-container.absolute {
+  position: absolute;
+  top: 100vh;
+  transition: top 0.5s ease, left 0.5s ease;
 }
 
 #parallax-container img {
@@ -24,38 +30,60 @@
   pointer-events: none;
 }
 
+.heading {
+  position: absolute;
+  font-size: 54px;
+  background-image: linear-gradient(to right, #f262c6 0%, #f4767d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: translateY(250px);
+  transition: transform 1s, opacity 1s;
+}
+
+.description {
+  opacity: 0;
+  transform: translateY(250px);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
 #heading-1 {
-  position: absolute;
-  font-size: 54px;
-  background-image: linear-gradient(to right, #f262c6 0%, #f4767d 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  bottom: 5%;
+  bottom: 68%;
 }
-
 #heading-2 {
-  position: absolute;
-  font-size: 54px;
-  background-image: linear-gradient(to right, #f262c6 0%, #f4767d 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  bottom: 5%;
+  bottom: 60%;
 }
-
 #heading-3 {
-  position: absolute;
-  font-size: 14px;
-  letter-spacing: 2%;
-  color: white;
-  bottom: 5%;
+  bottom: 56%;
 }
 
-#layer-7 {
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.zoom-effect {
+  transform: scale(1.1);
+  transition: transform 2s ease;
+}
+
+#parallax-container #layer-7 {
   position: absolute;
   right: 8%;
-  top: 25%;
+  top: 22%;
   background: linear-gradient(0deg, #c65060 0%, white 100%);
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  transition: transform 0.5s ease;
+}
+
+#layer-2,
+#layer-3,
+#layer-4,
+#layer-5 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  transition: transform 1s ease;
 }
