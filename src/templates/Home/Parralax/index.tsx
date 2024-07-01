@@ -34,16 +34,20 @@ function Parallax() {
 
       if (scrollY >= 150) {
         heading1.classList.add('visible');
+        layer1.classList.add('zoom-effect');
       } else {
         heading1.classList.remove('visible');
+        layer1.classList.remove('zoom-effect');
       }
 
       if (scrollY >= 300) {
         heading2.classList.add('visible');
         layer4.style.transform = `translateX(${-scrollY * speed}px)`;
         layer5.style.transform = `translateX(${scrollY * speed}px)`;
+        layer1.classList.add('zoom-effect');
       } else {
         heading2.classList.remove('visible');
+        layer1.classList.remove('zoom-effect');
       }
 
       if (scrollY >= 450) {

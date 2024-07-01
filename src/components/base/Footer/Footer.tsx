@@ -45,7 +45,7 @@ const Footer = () => {
             <Image src={MailIcon} alt='relaxation' priority={true} />
 
             <text className='text-purple-300 poppins-semibold text-sm'>
-              info@piratehub.io
+              info@pixieo.io
             </text>
           </div>
 
@@ -65,7 +65,7 @@ const Footer = () => {
       <section className='flex flex-row justify-around items-center gap-10'>
         <div></div>
         <div className='text-white poppins-semibold text-sm'>
-          Copyright © 2024 Piratehub. All Rights Reserved
+          Copyright © 2024 Pixieo. All Rights Reserved
         </div>
         <div className='flex flex-row items-center gap-6'>
           <LinkedinIcon />
